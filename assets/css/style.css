@@ -77,3 +77,20 @@ body {
     background-color: #5bb6fc;
     color: #fff;
 }
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .geniuz {
+        grid-gap: 30px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .menu {
+        width: 150px;
+        height: 150px;
+    }
+    .menu .btn {
+        margin-top: 20px;
+    }
+}
