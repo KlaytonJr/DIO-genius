@@ -21,3 +21,6 @@
 Este projeto é um clone do jogo Genius da estrela, criado para fins educacionais.
 
 Você pode visualizar o projeto através desse link <a href="https://klaytonjr.github.io/DIO-genius/">Clique Aqui</a>.
+
+Link do Repositório do Projeto desenvolvido no Bootcamp: https://github.com/SpruceGabriela/genesis-dio
+Algumas alterações foram feitas como a criação do menu e o design responsivo.
