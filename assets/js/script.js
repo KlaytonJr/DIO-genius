@@ -83,30 +83,26 @@ let nextLevel = () => {
 
 // Função para game over
 let gameOver = () => {
-    alert(`Pontuação: ${score}!\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo`);
-    order = [];
-    clickedOrder = [];
-
-    playGame();
+    alert(`Pontuação: ${score}!\nVocê perdeu o jogo!\nClique em OK e em seguida Start para iniciar um novo jogo`);
+    score = 0;
 }
 
 // Função para iniciar o jogo
-let playGame = () => {
+function playGame() {
     score = 0;
+    order = [];
+    clickedOrder = [];
     alert(`Bem vindo ao geniuz! Iniciando novo jogo!`);
 
     nextLevel();
 }
 
 // Eventos de clique para as cores
-// green.addEventListener('click', click(0));
-// red.addEventListener('click', click(1));
-// yellow.addEventListener('click', click(2));
-// blue.addEventListener('click', click(3));
 green.onclick = () => click(0);
 red.onclick = () => click(1);
 yellow.onclick = () => click(2);
 blue.onclick = () => click(3);
 
 // Inicio do jogo
-playGame();
+const btn = document.querySelector('.btn');
+btn.onclick = () => playGame();
